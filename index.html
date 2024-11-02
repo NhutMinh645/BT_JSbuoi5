@@ -6,100 +6,97 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Document</title>
+    <title>BT_JSbuoi5</title>
 </head>
-<body class="bg-[#CCE7E7] ">
-    <!-- BT1 -->
-     <section class="flex">
-         <div class=" pt-10" >
-             <h1 class=" text-2xl ml-3">🏫 Quản lý tuyển sinh</h1>
-             <div class="p-3 ">
-             <input class="w-40 rounded px-3 py-2 shadow-inner outline-none " type="number" id="diemChuan" placeholder="Điểm Chuẩn" required>
-             <select class="w-40 shadow-inner outline-none rounded px-3 py-2" name="" id="khuVuc">
-                 <option value="">Chọn Khu Vực </option>
-                 <option value="A">A</option>
-                 <option value="B">B</option>
-                 <option value="C">C</option>
-             </select>
-             <select class="w-41 shadow-inner outline-none rounded px-3 py-2" name="" id="doiTuong">
-                 <option value="">Chọn Đối Tượng</option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-             </select>
-             </div>
-             <div class="p-3">
-                 <input id="diemMon1" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Điểm Môn Thứ 1" required >
-                 <input id="diemMon2" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Điểm Môn Thứ 2" required >
-                 <input id="diemMon3" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Điểm Môn Thứ 3" required >
-             </div>
-             <div class="px-3">
-                 <button class="px-7 py-3 rounded-full bg-blue-500 text-white  font-bold" id="btnKiemTra">Kết Quả</button>    
-             </div>
-             <div class="bg-green-200 p-4 mt-3 ml-3 rounded w-[490px] border border-green-500 flex ">
-                 <p>👉</p>
-                 <p id="ketQua"></p>
-             </div>
-         </div>
+<body class="bg-[#CCE7E7]">
+    
+    <section class="flex flex-wrap justify-center md:justify-start gap-10 p-4">
+        <!-- BT1 -->
+        <div class="w-full md:w-1/2 lg:w-1/4 bg-white p-4 rounded-lg shadow-md">
+            <h1 class="text-2xl mb-4">🏫 Quản lý tuyển sinh</h1>
+            <div class="flex flex-col gap-3">
+                <input class="w-full md:w-auto rounded px-3 py-2 shadow-inner outline-none" type="number" id="diemChuan" placeholder="Điểm Chuẩn" required>
+                <select class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" id="khuVuc">
+                    <option value="">Chọn Khu Vực</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                <select class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" id="doiTuong">
+                    <option value="">Chọn Đối Tượng</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="flex flex-col gap-3 mt-3">
+                <input id="diemMon1" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Điểm Môn Thứ 1" required>
+                <input id="diemMon2" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Điểm Môn Thứ 2" required>
+                <input id="diemMon3" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Điểm Môn Thứ 3" required>
+            </div>
+            <div class="mt-4">
+                <button class="w-full md:w-auto px-7 py-3 rounded-full bg-blue-500 text-white font-bold" id="btnKiemTra">Kết Quả</button>
+            </div>
+            <div class="bg-green-200 p-4 mt-3 rounded border border-green-500">
+                <p>👉 <span id="ketQua"></span></p>
+            </div>
+        </div>
 
-         <!--BT2-->
-         <div class=" pt-10">
-            <h1 class=" text-2xl ml-3">🔋 Tính tiền điện</h1>
-            <div class="p-3 ">
-                <input id="name" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="text" placeholder="Nhập họ tên">
-                <input id="kw" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Nhập số kw" required >
+        <!-- BT2 -->
+        <div class="w-full md:w-1/2 lg:w-1/4 bg-white p-4 rounded-lg shadow-md">
+            <h1 class="text-2xl mb-4">🔋 Tính tiền điện</h1>
+            <div class="flex flex-col gap-3">
+                <input id="name" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="text" placeholder="Nhập họ tên">
+                <input id="kw" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Nhập số kw" required>
             </div>
-            <div class="px-3">
-                <button class="px-7 py-3 rounded-full bg-blue-500 text-white  font-bold" id="btnTinhTien">Tính tiền điện</button>    
+            <div class="mt-4">
+                <button class="w-full md:w-auto px-7 py-3 rounded-full bg-blue-500 text-white font-bold" id="btnTinhTien">Tính tiền điện</button>
             </div>
-            <div class="bg-green-200 p-4 mt-3 ml-3 rounded w-[490px] border border-green-500 flex ">
-                <p>👉</p>
-                <p id="result"></p>
-            </div>
-        </div>
-         <!-- BT3 -->
-         <div class=" pt-10">
-            <h1 class=" text-2xl ml-3">💰 Tính thuế thu nhập cá nhân</h1>
-            <div class="p-3 ">
-                <input id="hoTen" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="text" placeholder="Nhập họ tên">
-                <input id="tongThu" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Tổng thu nhập năm" required >
-                <input id="soNguoi" class="w-40 shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Số người phụ thuộc" required >
-            </div>
-            <div class="px-3">
-                <button class="px-7 py-3 rounded-full bg-blue-500 text-white  font-bold" id="btnTinhThue">Tính tiền thuế</button>    
-            </div>
-            <div class="bg-green-200 p-4 mt-3 ml-3 rounded w-[490px] border border-green-500 flex ">
-                <p>👉</p>
-                <p id="resultThue"></p>
+            <div class="bg-green-200 p-4 mt-3 rounded border border-green-500">
+                <p>👉 <span id="result"></span></p>
             </div>
         </div>
+
+        <!-- BT3 -->
+        <div class="w-full md:w-1/2 lg:w-1/4 bg-white p-4 rounded-lg shadow-md">
+            <h1 class="text-2xl mb-4">💰 Tính thuế thu nhập cá nhân</h1>
+            <div class="flex flex-col gap-3">
+                <input id="hoTen" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="text" placeholder="Nhập họ tên">
+                <input id="tongThu" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Tổng thu nhập năm" required>
+                <input id="soNguoi" class="w-full md:w-auto shadow-inner outline-none rounded px-3 py-2" type="number" placeholder="Số người phụ thuộc" required>
+            </div>
+            <div class="mt-4">
+                <button class="w-full md:w-auto px-7 py-3 rounded-full bg-blue-500 text-white font-bold" id="btnTinhThue">Tính tiền thuế</button>
+            </div>
+            <div class="bg-green-200 p-4 mt-3 rounded border border-green-500">
+                <p>👉 <span id="resultThue"></span></p>
+            </div>
+        </div>
+
         <!-- BT4 -->
-        <div class=" pt-10">
-            <h1 class=" text-2xl ml-3">🕸️ Tính tiền cáp</h1>
-            <div class="p-3 ">
-                <select class="w-45 shadow-inner outline-none rounded px-4 py-2" name="" id="loaiKhach"  onchange="hienThiOsoKetNoi()">
+        <div class="w-full md:w-1/2 lg:w-1/4 bg-white p-4 rounded-lg shadow-md">
+            <h1 class="text-2xl mb-4">🕸️ Tính tiền cáp</h1>
+            <div class="flex flex-col gap-3">
+                <select class="w-full md:w-auto shadow-inner outline-none rounded px-4 py-2" id="loaiKhach" onchange="hienThiOsoKetNoi()">
                     <option value="">Chọn loại khách hàng</option>
-                    <option value="nhaDan">Nhà Dân </option>
+                    <option value="nhaDan">Nhà Dân</option>
                     <option value="doanhNghiep">Doanh Nghiệp</option>
                 </select>
-                <input id="maKH" class="w-40 shadow-inner outline-none rounded px-4 py-2" type="text" placeholder="Nhập mã khách hàng" required >
-                <input id="soKenh" class="w-40 shadow-inner outline-none rounded px-4 py-2" type="number" placeholder="Số kênh cao cấp" required >
+                <input id="maKH" class="w-full md:w-auto shadow-inner outline-none rounded px-4 py-2" type="text" placeholder="Nhập mã khách hàng" required>
+                <input id="soKenh" class="w-full md:w-auto shadow-inner outline-none rounded px-4 py-2" type="number" placeholder="Số kênh cao cấp" required>
                 <div id="oSoKetNois" class="hidden">
-                    <input id="soKetNoi" class=" w-40 shadow-inner outline-none rounded px-4 py-2 " type="number" placeholder="Số kết nối" required >
+                    <input id="soKetNoi" class="w-full md:w-auto shadow-inner outline-none rounded px-4 py-2" type="number" placeholder="Số kết nối" required>
                 </div>
             </div>
-            <div class="px-3">
-                <button class="px-7 py-3 rounded-full bg-blue-500 text-white  font-bold" id="btnTinhCap">Tính tiền cáp</button>    
+            <div class="mt-4">
+                <button class="w-full md:w-auto px-7 py-3 rounded-full bg-blue-500 text-white font-bold" id="btnTinhCap">Tính tiền cáp</button>
             </div>
-            <div class="bg-green-200 p-4 mt-3 ml-3 rounded w-[490px] border border-green-500 flex ">
-                <p>👉</p>
-                <p id="resultCap"></p>
+            <div class="bg-green-200 p-4 mt-3 rounded border border-green-500">
+                <p>👉 <span id="resultCap"></span></p>
             </div>
         </div>
-     </section>
+    </section>
     
-    
-
     <script src="./index.js"></script>
 </body>
 </html>
